@@ -14,7 +14,7 @@ public class BangdanActivity extends AppCompatActivity {
         setContentView(R.layout.activity_bangdan);
         Button youxikuButton = findViewById(R.id.youxikubutton);
         youxikuButton.setOnClickListener(v ->{
-            Intent intent = new Intent(BangdanActivity.this,youxiku.class);
+            Intent intent = new Intent(BangdanActivity.this, youxikuActivity.class);
             startActivity(intent);
         });
     }

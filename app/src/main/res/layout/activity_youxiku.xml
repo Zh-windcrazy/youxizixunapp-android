@@ -4,7 +4,17 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="cn.edu.scujcc.youxizixun.youxiku">
+    tools:context="cn.edu.scujcc.youxizixun.youxikuActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="424dp"
+        android:layout_height="50dp"
+        android:background="#00BCD4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/game_rv"
@@ -80,7 +90,7 @@
         android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="116dp"
+        android:layout_marginTop="100dp"
         android:text="为你推荐"
         android:textSize="24sp"
         android:textStyle="bold"
@@ -120,6 +130,7 @@
         android:id="@+id/bangdanbutton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:background="#00BCD4"
         android:text="榜单"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

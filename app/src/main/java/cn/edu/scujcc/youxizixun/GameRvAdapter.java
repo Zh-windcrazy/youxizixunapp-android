@@ -33,7 +33,7 @@ public class GameRvAdapter extends RecyclerView.Adapter<GameRvAdapter.GameRowHol
     @NonNull
     @Override
     public GameRowHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View rowView = LayoutInflater.from(parent.getContext()).inflate(R.layout.game_row, parent, false);
+        View rowView = LayoutInflater.from(parent.getContext()).inflate(R.layout.game_row,parent,false);
         GameRowHolder holder = new GameRowHolder(rowView);
         return holder;
     }
