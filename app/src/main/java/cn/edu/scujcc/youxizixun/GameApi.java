@@ -6,6 +6,6 @@ import retrofit2.Call;
 import retrofit2.http.GET;
 
 public interface GameApi {
-    @GET("/games")
+    @GET("/game")
     Call<List<Game>> getAllGames();
 }

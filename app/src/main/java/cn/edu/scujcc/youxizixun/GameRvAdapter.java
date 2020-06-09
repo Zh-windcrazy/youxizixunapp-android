@@ -93,7 +93,7 @@ public class GameRvAdapter extends RecyclerView.Adapter<GameRvAdapter.GameRowHol
             this.price.setText(c.getPrice());
             //弃用本地图片的方式，改为从网络加载图片
 //            this.cover.setImageResource(c.getCover());
-            Log.d("DianDian", c.getTitle() + "：准备从网络加载封面：" + c.getCover());
+            Log.d("Game", c.getTitle() + "：准备从网络加载封面：" + c.getCover());
             Glide.with(context)
                     .load(c.getCover())
                     .into(this.cover);
