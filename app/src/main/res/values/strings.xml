@@ -2,5 +2,8 @@
     <string name="app_name">youxizixun</string>
     <string name="text_label_1" />
     <string name="text_label_2" />
-    <string name="title_home" />
+    <string name="title_home" translatable="false" >首页</string>
+    <string name="title_activity_dibu">dibuActivity</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
 </resources>
