@@ -67,21 +67,21 @@ public class GameLab {
             public void onResponse(Call<List<Game>> call,
                                    Response<List<Game>> response) {
                 if (null != response && null != response.body()) {
-                    Log.d("DianDian", "从阿里云得到的数据是：");
-                    Log.d("DianDian", response.body().toString());
+                    Log.d("Game", "从阿里云得到的数据是：");
+                    Log.d("Game", response.body().toString());
                     data = response.body();
                     //发出通知
                     Message msg = new Message();
                     msg.what = 1;  //自己规定1代表从阿里云获取数据完毕
                     handler.sendMessage(msg);
                 } else {
-                    Log.w("DianDian", "response没有数据！");
+                    Log.w("Game", "response没有数据！");
                 }
             }
 
             @Override
             public void onFailure(Call<List<Game>> call, Throwable t) {
-                Log.e("DianDian", "访问网络失败！", t);
+                Log.e("Game", "访问网络失败！", t);
             }
         });
     }
