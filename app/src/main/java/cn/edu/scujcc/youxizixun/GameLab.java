@@ -17,6 +17,8 @@ public class GameLab {
     private static GameLab INSTANCE = null;
 
     private List<Game> data;
+    public final static int MSG_CHANNELS = 1;
+    public final static int MSG_FAILURE = 4;
 
     //单例第2步
     private GameLab() {
