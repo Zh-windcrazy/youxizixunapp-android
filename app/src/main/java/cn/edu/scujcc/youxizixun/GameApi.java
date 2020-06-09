@@ -7,5 +7,5 @@ import retrofit2.http.GET;
 
 public interface GameApi {
     @GET("/games")
-    Call<List<Game>> getAllChannels();
+    Call<List<Game>> getAllGames();
 }
