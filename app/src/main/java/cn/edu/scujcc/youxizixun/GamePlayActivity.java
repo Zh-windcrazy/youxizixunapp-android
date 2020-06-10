@@ -2,13 +2,17 @@ package cn.edu.scujcc.youxizixun;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
+import android.widget.Gallery;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import com.bumptech.glide.Glide;
 
 import java.io.Serializable;
 
@@ -36,6 +40,9 @@ public class GamePlayActivity extends AppCompatActivity {
             Intent intent = new Intent(GamePlayActivity.this,youxikuActivity.class);
             startActivity(intent);
         });
+
+        Gallery gallery = (Gallery) findViewById(R.id.gallery);
+        gallery.setAdapter(new GameAdapter.ImageAdapter(this));   // gallery添加ImageAdapter图片资源
         }
 
     private void updateUI(){

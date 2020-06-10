@@ -20,7 +20,7 @@ public class GameAdapter {
         public View getView(int position, View convertView, ViewGroup parent) {
             ImageView imageview = new ImageView(mContext);
             imageview.setImageResource(imgs[position]);
-            imageview.setLayoutParams(new Gallery.LayoutParams(240, 200));  // 设置布局 图片120×120显示
+            imageview.setLayoutParams(new Gallery.LayoutParams(1000, 1000));  // 设置布局 图片120×120显示
             imageview.setScaleType(ImageView.ScaleType.CENTER);    // 设置显示比例类型（不缩放）
             return imageview; }
     }
