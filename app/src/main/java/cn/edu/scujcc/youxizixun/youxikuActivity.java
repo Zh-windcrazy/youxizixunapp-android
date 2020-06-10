@@ -54,7 +54,9 @@ public class youxikuActivity extends AppCompatActivity {
         this.gameRv = findViewById(R.id.game_rv);
         rvAdapter = new GameRvAdapter(youxikuActivity.this, p -> {
             //跳转到新界面。
-            Intent intent = new Intent(youxikuActivity.this, BangdanActivity.class);
+            Intent intent = new Intent(youxikuActivity.this, GamePlayActivity.class);
+            Game c = lab.getGame(p);
+            intent.putExtra("game", c);
             startActivity(intent);
         });
         this.gameRv.setAdapter(rvAdapter);

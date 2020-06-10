@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GamePlayActivity">
+
+    <ImageView
+        android:id="@+id/game_img"
+        android:layout_width="312dp"
+        android:layout_height="314dp"
+        android:layout_marginTop="60dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_cake_black_24dp" />
+
+    <TextView
+        android:id="@+id/game_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="TextView"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.088"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/game_img" />
+
+    <TextView
+        android:id="@+id/game_content"
+        android:layout_width="354dp"
+        android:layout_height="97dp"
+        android:layout_marginTop="16dp"
+        android:text="“绝地求生是一款战术竞技型射击类沙盒游戏。每一局游戏有100名玩家参与，玩家空投跳伞至地图的各个角落，收集各种资源，并在不断缩小的安全区域内对抗其他玩家，让自己生存到最后。”"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/game_title"
+        app:layout_constraintTop_toBottomOf="@+id/game_title" />
+
+    <TextView
+        android:id="@+id/game_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="TextView"
+        android:textColor="#2196F3"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/game_content"
+        app:layout_constraintTop_toBottomOf="@+id/game_content" />
+
+    <ImageButton
+        android:id="@+id/gouwuche_button"
+        android:layout_width="42dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="16dp"
+        android:background="#FAF8F8"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.788"
+        app:layout_constraintStart_toEndOf="@+id/game_price"
+        app:layout_constraintTop_toBottomOf="@+id/game_content"
+        app:srcCompat="@drawable/ic_add_shopping_cart_black_24dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>

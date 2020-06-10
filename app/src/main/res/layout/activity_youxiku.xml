@@ -47,6 +47,8 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="176dp"
         android:text="热门游戏"
+        android:textSize="24sp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.098"
         app:layout_constraintStart_toStartOf="parent"
