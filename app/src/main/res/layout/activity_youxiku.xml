@@ -9,7 +9,7 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="424dp"
         android:layout_height="50dp"
-        android:background="#00BCD4"
+        android:background="#FF5722"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
@@ -20,11 +20,15 @@
         android:id="@+id/game_rv"
         android:layout_width="365dp"
         android:layout_height="296dp"
+        android:layout_marginStart="8dp"
         android:layout_marginTop="376dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/linearLayout"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.542"
+        app:layout_constraintHorizontal_bias="0.533"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.05" />
 
     <TextView
         android:id="@+id/textView"
@@ -50,41 +54,39 @@
 
     <ImageView
         android:id="@+id/hotimage1"
-        android:layout_width="62dp"
-        android:layout_height="62dp"
-        android:layout_marginTop="244dp"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="228dp"
         app:layout_constraintEnd_toStartOf="@+id/hotimage2"
-        app:layout_constraintHorizontal_bias="0.408"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/ic_launcher_foreground" />
+        app:srcCompat="@drawable/game1" />
 
     <ImageView
         android:id="@+id/hotimage2"
-        android:layout_width="62dp"
-        android:layout_height="62dp"
-        android:layout_marginEnd="32dp"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
         app:layout_constraintBottom_toBottomOf="@+id/hotimage1"
         app:layout_constraintEnd_toStartOf="@+id/hotimage3"
-        app:srcCompat="@drawable/ic_launcher_foreground" />
+        app:srcCompat="@drawable/game2" />
 
     <ImageView
         android:id="@+id/hotimage3"
-        android:layout_width="62dp"
-        android:layout_height="62dp"
-        android:layout_marginEnd="36dp"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
         app:layout_constraintBottom_toBottomOf="@+id/hotimage2"
         app:layout_constraintEnd_toStartOf="@+id/hotimage4"
-        app:srcCompat="@drawable/ic_launcher_foreground" />
+        app:srcCompat="@drawable/game3" />
 
     <ImageView
         android:id="@+id/hotimage4"
-        android:layout_width="62dp"
-        android:layout_height="62dp"
-        android:layout_marginEnd="24dp"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginEnd="8dp"
         app:layout_constraintBottom_toBottomOf="@+id/hotimage3"
         app:layout_constraintEnd_toEndOf="parent"
-        app:srcCompat="@drawable/ic_launcher_foreground" />
+        app:srcCompat="@drawable/game4" />
 
     <TextView
         android:id="@+id/textView3"
@@ -101,12 +103,11 @@
         android:id="@+id/tuijianimage"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="60dp"
+        android:layout_marginTop="52dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/ic_launcher_foreground" />
+        app:srcCompat="@drawable/logo" />
 
     <LinearLayout
         android:id="@+id/linearLayout"
@@ -130,9 +131,11 @@
         android:id="@+id/bangdanbutton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="#00BCD4"
+        android:layout_marginTop="8dp"
+        android:background="#FF5722"
         android:text="榜单"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tuijianimage" />
 
