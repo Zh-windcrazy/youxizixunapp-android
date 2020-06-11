@@ -64,27 +64,27 @@ public class LoginActivity extends AppCompatActivity {
 
         loginButton = findViewById(R.id.login_button);
         loginButton.setOnClickListener(v -> {
-            EditText username = findViewById(R.id.r_username);
-            EditText password = findViewById(R.id.login_password);
-            String u = username.getText().toString();
-            String p = password.getText().toString();
+            TextInputLayout username = findViewById(R.id.r_username);
+            TextInputLayout password = findViewById(R.id.login_password);
+            String u = username.getEditText().getText().toString();
+            String p = password.getEditText().getText().toString();
             //TODO 调用Retrofit
             lab.login(u, p, handler);
         });
 
         Button registerButton = findViewById(R.id.register_button);
         registerButton.setOnClickListener(v ->{
-            Intent intent = new Intent(LoginActivity.this,youxikuActivity.class);
+            Intent intent = new Intent(LoginActivity.this,RegisterActivity.class);
             startActivity(intent);
         });
 
         Button loginButton = findViewById(R.id.login_button);
         loginButton.setOnClickListener(v ->{
-            Toast.makeText(LoginActivity.this,
-                    "登录成功！",
-                    Toast.LENGTH_LONG).show();
-            Intent intent = new Intent(LoginActivity.this,youxikuActivity.class);
-            startActivity(intent);
+                Toast.makeText(LoginActivity.this,
+                        "登录成功！",
+                        Toast.LENGTH_LONG).show();
+                Intent intent = new Intent(LoginActivity.this, youxikuActivity.class);
+                startActivity(intent);
         });
     }
 }

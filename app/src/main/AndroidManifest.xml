@@ -24,10 +24,11 @@
         <activity
             android:name=".GamePlayActivity"
             android:theme="@style/AppTheme2" />
-        <activity android:name=".RegisterActivity" />
+        <activity
+            android:name=".RegisterActivity" android:theme="@style/AppTheme3"/>
         <activity
             android:name=".LoginActivity"
-            android:theme="@style/AppTheme2">
+            android:theme="@style/AppTheme3">
 
         </activity>
         <activity
