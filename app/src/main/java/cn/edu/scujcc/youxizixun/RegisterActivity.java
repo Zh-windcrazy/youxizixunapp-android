@@ -47,25 +47,28 @@ public class RegisterActivity extends AppCompatActivity {
         registerButton = findViewById(R.id.register_button);
         registerButton.setOnClickListener(v -> {
             register();
-            Intent intent = new Intent(RegisterActivity.this, LoginActivity.class);
-            startActivity(intent);
         });
 
-        //新建一个Builder
+        // new Builder()
         MaterialDatePicker.Builder builder = MaterialDatePicker.Builder.datePicker();
         //告诉builder我们想要的效果
         builder.setTitleText(R.string.birthday_title);
-        //告诉builder，开工
         MaterialDatePicker<Long> picker = builder.build();
+        //操作日历
 
+        //日历点击“确定”后的处理
+        picker.addOnPositiveButtonClickListener(s -> {
+            Log.d(TAG, "日历的结果是：" + s);
+            Log.d(TAG, "标题是：" + picker.getHeaderText());
+            birthdayInput.getEditText().setText(picker.getHeaderText());
 
-        //点击图标，弹出日历
-        birthdayInput = findViewById(R.id.r_birthday);
-        birthdayInput.setEndIconOnClickListener(v -> {
-            Log.d(TAG, "生日图标被点击了。");
-            picker.show(getSupportFragmentManager(), picker.toString());
         });
 
+        birthdayInput.setEndIconOnClickListener(v -> {
+            //弹出日历选择框
+            Log.d(TAG, "生日图标被点击了！");
+            picker.show(getSupportFragmentManager(), picker.toString());
+        });
     }
     private void register() {
         User u = new User();
@@ -84,7 +87,7 @@ public class RegisterActivity extends AppCompatActivity {
         if (password1 != null && password2 != null) {
             if (!password2.toString().equals(password1.toString())) { //两次密码不相同
                 error= true;
-                errorMessage = "两次密码不相同";
+
             } else {
                 u.setPassword(password1.toString());
             }
