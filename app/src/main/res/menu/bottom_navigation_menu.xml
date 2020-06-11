@@ -4,10 +4,10 @@
         android:id="@+id/page_1"
         android:enabled="true"
         android:icon="@drawable/ic_home_black_24dp"
-        android:title="首页" />
+        android:title="@string/title_home" />
     <item
         android:id="@+id/page_2"
         android:enabled="true"
         android:icon="@drawable/ic_computer_black_24dp"
-        android:title="游戏库"/>
+        android:title="@string/title_dashboard"/>
 </menu>

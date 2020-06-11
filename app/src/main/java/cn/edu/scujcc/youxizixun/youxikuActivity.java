@@ -11,6 +11,7 @@ import android.os.Handler;
 import android.os.Message;
 import android.view.MenuItem;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.TextView;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
@@ -43,6 +44,12 @@ public class youxikuActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_youxiku);
+
+        ImageButton qiehuan2 = findViewById(R.id.shouyeButton);
+        qiehuan2.setOnClickListener(v ->{
+            Intent intent = new Intent(youxikuActivity.this,MainActivity.class);
+            startActivity(intent);
+        });
 
 
         Button bangdanButton = findViewById(R.id.bangdanbutton);
